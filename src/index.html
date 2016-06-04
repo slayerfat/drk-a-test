@@ -10,11 +10,10 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="resources/app.css">
 </head>
 <body>
 <drunk-android-app>Loading...</drunk-android-app>
-
-
 {{#each scripts.polyfills}}
 <script src="{{.}}"></script>
 {{/each}}
@@ -23,7 +22,5 @@
     System.import('main');
   }).catch(console.error.bind(console));
 </script>
-
-
 </body>
 </html>
